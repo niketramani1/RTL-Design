@@ -30,6 +30,8 @@ After write_verilog we get this hierarchical netlist
 ![image](https://user-images.githubusercontent.com/86380243/123173526-bc7f6280-d44c-11eb-958f-66d1400a45fa.png)
 
 Running the synthesis for multiple modules flat, it is a single netlist and submodules are not preserved
+![image](https://user-images.githubusercontent.com/86380243/123174326-eedd8f80-d44d-11eb-88a9-6f343a180a9c.png)
+After write_verilog we get this hierarchical netlist
 ![image](https://user-images.githubusercontent.com/86380243/123173992-724ab100-d44d-11eb-99ba-4f8f461dfba9.png)
 
 
