@@ -16,7 +16,7 @@ Writing verilog netlist
 
 **Day 2**: Timing libs, hierarchical vs flat synthesis and efficient flop coding styles
 
-Lab1: Understanding the .lib files and the content in it
+Lab1: Understanding the .lib files and the content in it. Concepts of PVT
 ![image](https://user-images.githubusercontent.com/86380243/123167880-2b58bd80-d445-11eb-8a9c-2c4840c4d42e.png)
 
 Lab2: Differentiating Hierarchichal vs Flat synthesis
