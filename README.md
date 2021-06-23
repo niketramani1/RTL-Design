@@ -56,6 +56,13 @@ SIMULATIONS:
 ![image](https://user-images.githubusercontent.com/86380243/123180948-54d01400-d45a-11eb-8f5c-90ff127c6881.png)
 ![image](https://user-images.githubusercontent.com/86380243/123181231-e5a6ef80-d45a-11eb-826f-a6a6f9fe8a27.png)
 
+2)Asynchronous set:
+![image](https://user-images.githubusercontent.com/86380243/123181822-16d3ef80-d45c-11eb-8ceb-85d4fa368295.png)
+
+3)Synchronous reset:
+![image](https://user-images.githubusercontent.com/86380243/123182148-d2951f00-d45c-11eb-8031-33c2f66f7643.png)
+
+
 
 
 
