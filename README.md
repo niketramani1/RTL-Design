@@ -34,6 +34,17 @@ Running the synthesis for multiple modules flat, it is a single netlist and subm
 After write_verilog we get this hierarchical netlist
 ![image](https://user-images.githubusercontent.com/86380243/123173992-724ab100-d44d-11eb-99ba-4f8f461dfba9.png)
 
+Synthesizing only one particular submodule from multiple modules:
+
+After synthesizing submodule1 from multiple_modules.v we get
+![image](https://user-images.githubusercontent.com/86380243/123176274-2568d980-d451-11eb-8f3d-69d2d540823a.png)
+As we can see only the AND gate(submodule 1) is synthesized
+
+We do module level synthesis primarily for 2 reasons:
+a) If same module instantiated multiple times in design, we need not synthesize it multiple times. Rather, we do it once and stitch them together
+b) If it is a large design with many number of modules, we do the synthesis part by part basically divide and conquer
+
+
 
 
 
