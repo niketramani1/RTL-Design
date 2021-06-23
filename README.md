@@ -51,6 +51,12 @@ A flip flop has to have an initial state or else the comb circuits might get som
 This can be done using the set/ reset. The set/reset can be synchronous or asynchronous. In some cases, the FF can have both synchronous and asynchronous reset at the same time.
 Asynchronous is basically independent of clock and synchronous is dependent on the clock.
 
+SIMULATIONS:
+1) Aynchronous reset:
+![image](https://user-images.githubusercontent.com/86380243/123180948-54d01400-d45a-11eb-8f5c-90ff127c6881.png)
+![image](https://user-images.githubusercontent.com/86380243/123181231-e5a6ef80-d45a-11eb-826f-a6a6f9fe8a27.png)
+
+
 
 
 
