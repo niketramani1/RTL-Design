@@ -44,6 +44,13 @@ We do module level synthesis primarily for 2 reasons:
 a) If same module instantiated multiple times in design, we need not synthesize it multiple times. Rather, we do it once and stitch them together
 b) If it is a large design with many number of modules, we do the synthesis part by part basically divide and conquer
 
+FLIP FLOPS AND THEIR SIMULATIONS
+Why a flip flop?
+Is basically used to avoid glitches when there is a series of combinational circuits.
+A flip flop has to have an initial state or else the comb circuits might get some garbage values.
+This can be done using the set/ reset. The set/reset can be synchronous or asynchronous. In some cases, the FF can have both synchronous and asynchronous reset at the same time.
+Asynchronous is basically independent of clock and synchronous is dependent on the clock.
+
 
 
 
