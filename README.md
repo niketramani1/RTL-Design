@@ -127,8 +127,11 @@ Sequential optimizations can be done in below ways:
    ![image](https://user-images.githubusercontent.com/86380243/123331365-34ad5d00-d50d-11eb-9448-aa935a5b3528.png)
    As we can see above y=a.c' + a(b'.c + a.b.c) optimizes to a'b' + ab (XNOR)
    
-   5)Synthesizing multiple_modules_opt.v
+   5)Synthesizing multiple_modules_opt.v, and flattening the netlist
    ![image](https://user-images.githubusercontent.com/86380243/123332062-067c4d00-d50e-11eb-8f8b-cc9dacf8d315.png)
+   ![image](https://user-images.githubusercontent.com/86380243/123332595-afc34300-d50e-11eb-9920-82b0edcdb1b2.png)
+   As we can see, that the multiple module implementations are optimized to AND OR INVERT21 (AOI21)
+
 
 
 
