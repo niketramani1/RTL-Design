@@ -105,7 +105,7 @@ Sequential optimizations can be done in below ways:
    
    c) Cloning: Physical aware optimization
    
-   Lab 06: For optimization, we us all opt_check labs
+   Lab 06: For combinational optimization, we use all opt_check labs
    
    1)Synthesizing opt_check1.v which is an actual 2:1 Mux, it optimizes to a 2 input AND gate. We make us of opt_clean -purge here.
    ![image](https://user-images.githubusercontent.com/86380243/123327348-522bf800-d508-11eb-8b3a-a362ba1230bc.png)
@@ -131,6 +131,12 @@ Sequential optimizations can be done in below ways:
    ![image](https://user-images.githubusercontent.com/86380243/123332062-067c4d00-d50e-11eb-8f8b-cc9dacf8d315.png)
    ![image](https://user-images.githubusercontent.com/86380243/123332595-afc34300-d50e-11eb-9920-82b0edcdb1b2.png)
    As we can see, that the multiple module implementations are optimized to AND OR INVERT21 (AOI21)
+   
+   5)Synthesizing multiple_modules_opt2.v, and flattening the netlist
+   ![image](https://user-images.githubusercontent.com/86380243/123333869-49d7bb00-d510-11eb-9722-613f5b997ccd.png)
+   ![image](https://user-images.githubusercontent.com/86380243/123333789-32003700-d510-11eb-9c62-a03986679788.png)
+   As we can see, that the multiple module implementations are optimized to a simple logic
+
 
 
 
