@@ -44,7 +44,7 @@ We do module level synthesis primarily for 2 reasons:
 a) If same module instantiated multiple times in design, we need not synthesize it multiple times. Rather, we do it once and stitch them together
 b) If it is a large design with many number of modules, we do the synthesis part by part basically divide and conquer
 
-FLIP FLOPS AND THEIR SIMULATIONS
+FLIP FLOPS AND THEIR SIMULATIONS AND SYNTHESIS
 Why a flip flop?
 Is basically used to avoid glitches when there is a series of combinational circuits.
 A flip flop has to have an initial state or else the comb circuits might get some garbage values.
@@ -62,6 +62,16 @@ SIMULATIONS:
 3)Synchronous reset:
 ![image](https://user-images.githubusercontent.com/86380243/123182148-d2951f00-d45c-11eb-8031-33c2f66f7643.png)
 
+SYNTHESIS:
+1) Asynchronous reset:
+![image](https://user-images.githubusercontent.com/86380243/123182792-27856500-d45e-11eb-9416-de8ba927ddcf.png)
+Here there is an inverter because the dff in library is active low and we have designed an active high reset
+
+2)Asynchronous set:
+![image](https://user-images.githubusercontent.com/86380243/123183135-e3469480-d45e-11eb-80bb-d3832bc1c49e.png)
+
+3)Synchronous reset:
+![image](https://user-images.githubusercontent.com/86380243/123183304-49331c00-d45f-11eb-80b7-f2384a7eb7a3.png)
 
 
 
