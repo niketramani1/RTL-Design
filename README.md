@@ -139,12 +139,18 @@ Sequential optimizations can be done in below ways:
 
    Lab 07: For combinational optimization, we use all dff_const labs
    
-   1)Simulating dff_const1.v, we see that a flop has to be inferred as even if it is async reset. The o/p will change only on next edge of clock.
+   1a)Simulating dff_const1.v, we see that a flop has to be inferred as even if it is async reset. The o/p will change only on next edge of clock.
    ![image](https://user-images.githubusercontent.com/86380243/123336779-52ca8b80-d514-11eb-9a7b-8187808ec127.png)
+   1b)Synthesizing dff_const1.v, we see that the FF instance is still there
+   ![image](https://user-images.githubusercontent.com/86380243/123337677-940f6b00-d515-11eb-97c7-a481611499c4.png)
 
    
-   2)Simulating dff_const2.v, we see that q always remains high irrespective of reset
+   2a)Simulating dff_const2.v, we see that q always remains high irrespective of reset
    ![image](https://user-images.githubusercontent.com/86380243/123337097-be145d80-d514-11eb-8b44-326b9cd7e02f.png)
+   2b)Synthesizing dff_const2.v, we see that the FF instance is not there
+   ![image](https://user-images.githubusercontent.com/86380243/123338064-39c2da00-d516-11eb-916a-f396ac174e23.png)
+   ![image](https://user-images.githubusercontent.com/86380243/123338185-60811080-d516-11eb-9b04-574718899ee3.png)
+   We can see it from the netlist as well
 
    
  
