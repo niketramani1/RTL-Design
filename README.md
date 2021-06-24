@@ -137,8 +137,17 @@ Sequential optimizations can be done in below ways:
    ![image](https://user-images.githubusercontent.com/86380243/123333789-32003700-d510-11eb-9c62-a03986679788.png)
    As we can see, that the multiple module implementations are optimized to a simple logic
 
+   Lab 07: For combinational optimization, we use all dff_const labs
+   
+   1)Simulating dff_const1.v, we see that a flop has to be inferred as even if it is async reset. The o/p will change only on next edge of clock.
+   ![image](https://user-images.githubusercontent.com/86380243/123336779-52ca8b80-d514-11eb-9a7b-8187808ec127.png)
 
+   
+   2)Simulating dff_const2.v, we see that q always remains high irrespective of reset
+   ![image](https://user-images.githubusercontent.com/86380243/123337097-be145d80-d514-11eb-8b44-326b9cd7e02f.png)
 
+   
+ 
 
 
 
