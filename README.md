@@ -104,6 +104,37 @@ Sequential optimizations can be done in below ways:
    b) Retiming: Retiming of combinational logic in a flop to flop path can lead to a better max frequency
    
    c) Cloning: Physical aware optimization
+   
+   Lab 06: For optimization, we us all opt_check labs
+   
+   1)Synthesizing opt_check1.v which is an actual 2:1 Mux, it optimizes to a 2 input AND gate. We make us of opt_clean -purge here.
+   ![image](https://user-images.githubusercontent.com/86380243/123327348-522bf800-d508-11eb-8b3a-a362ba1230bc.png)
+   ![image](https://user-images.githubusercontent.com/86380243/123327160-1bee7880-d508-11eb-99e3-ad14ad65a8ee.png)
+   As we can see above y=a.0 + a.b optimizes to a.b (AND)
+   
+   2)Synthesizing opt_check2.v which is an actual 2:1 Mux, it optimizes to a 2 input OR gate. We make us of opt_clean -purge here.
+   ![image](https://user-images.githubusercontent.com/86380243/123328785-024e3080-d50a-11eb-8e49-ee3805f15716.png)
+   ![image](https://user-images.githubusercontent.com/86380243/123328732-ee0a3380-d509-11eb-9dbb-a8eacb93ee1b.png)
+   As we can see above y=a'b + a.1 optimizes to a+b (OR)
+   
+   3)Synthesizing opt_check3.v which actually two instances of 2:1 Mux, it optimizes to a 3 input AND gate. We make us of opt_clean -purge here.
+   ![image](https://user-images.githubusercontent.com/86380243/123330510-1c890e00-d50c-11eb-992d-95fbef43255a.png)
+   ![image](https://user-images.githubusercontent.com/86380243/123330591-362a5580-d50c-11eb-9704-d946193f7acb.png)
+   As we can see above y=a.(b.c + c'.0) optimizes to a.b.c (AND)
+   
+   4)Synthesizing opt_check4.v which actually two instances of 2:1 Mux, it optimizes to a 2 input XNOR gate.
+   ![image](https://user-images.githubusercontent.com/86380243/123331122-da140100-d50c-11eb-8434-707485af0598.png)
+   ![image](https://user-images.githubusercontent.com/86380243/123331365-34ad5d00-d50d-11eb-9448-aa935a5b3528.png)
+   As we can see above y=a.c' + a(b'.c + a.b.c) optimizes to a'b' + ab (XNOR)
+   
+   5)Synthesizing multiple_modules_opt.v
+   ![image](https://user-images.githubusercontent.com/86380243/123332062-067c4d00-d50e-11eb-8f8b-cc9dacf8d315.png)
+
+
+
+
+
+   
 
 
 
