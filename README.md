@@ -52,7 +52,7 @@ This can be done using the set/ reset. The set/reset can be synchronous or async
 Asynchronous is basically independent of clock and synchronous is dependent on the clock.
 
 SIMULATIONS:
-1) Aynchronous reset:
+1)Aynchronous reset:
 ![image](https://user-images.githubusercontent.com/86380243/123180948-54d01400-d45a-11eb-8f5c-90ff127c6881.png)
 ![image](https://user-images.githubusercontent.com/86380243/123181231-e5a6ef80-d45a-11eb-826f-a6a6f9fe8a27.png)
 
@@ -63,7 +63,7 @@ SIMULATIONS:
 ![image](https://user-images.githubusercontent.com/86380243/123182148-d2951f00-d45c-11eb-8031-33c2f66f7643.png)
 
 SYNTHESIS:
-1) Asynchronous reset:
+1)Asynchronous reset:
 ![image](https://user-images.githubusercontent.com/86380243/123182792-27856500-d45e-11eb-9416-de8ba927ddcf.png)
 Here there is an inverter because the dff in library is active low and we have designed an active high reset
 
@@ -85,6 +85,25 @@ Synthesizing mult_8: We can see there is no hardware as its appending
 The netlist will be: 
 ![image](https://user-images.githubusercontent.com/86380243/123185161-45a19400-d463-11eb-89b0-0d330087a794.png)
 As we can see, its basically concatenating {a,a}
+
+**Day 3**: Combinational and sequential optimizations
+Combinational optimizations can be done in below ways (the tool optimizes):
+1) Squeezing the logic for optimized design (PPA)
+2) Constant propagation (Direct optimization)
+   Example can be if an input to a particular circuit is 0 and this 0 propagates to the primary output resulting in a constant value, the hardware is basically redundant.
+3) Boolean optimizations
+   Example can be a Multiple mux implementation which finally leads to a simple gate after Boolean optimization
+
+Sequential optimizations can be done in below ways:
+1) Basic: Sequential constant propagation
+   Assume that a D flop's input is always 0(GND) and we also have a reset pin connected. THe Q output is never going to be 1(VDD) and if Q is going to a 2 inut NAND gate, the      output of it is always going to be 1
+2) Advanced : 
+
+   a) State optimizations: Unused state can be optimized
+   
+   b) Retiming: Retiming of combinational logic in a flop to flop path can lead to a better max frequency
+   
+   c) Cloning: Physical aware optimization
 
 
 
