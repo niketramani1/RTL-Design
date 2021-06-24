@@ -84,7 +84,7 @@ Synthesizing mult_8: We can see there is no hardware as its appending
 ![image](https://user-images.githubusercontent.com/86380243/123185041-0b37f700-d463-11eb-8bd1-b038a8acb95e.png)
 The netlist will be: 
 ![image](https://user-images.githubusercontent.com/86380243/123185161-45a19400-d463-11eb-89b0-0d330087a794.png)
-As we can see, its basicallay concatenating {a,a}
+As we can see, its basically concatenating {a,a}
 
 
 
