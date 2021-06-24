@@ -73,6 +73,21 @@ Here there is an inverter because the dff in library is active low and we have d
 3)Synchronous reset:
 ![image](https://user-images.githubusercontent.com/86380243/123183304-49331c00-d45f-11eb-80b7-f2384a7eb7a3.png)
 
+Optimizations in synthesis
+Synthesizing mult_2: We can see there is no hardware as its only appending a 0
+Multiplication in binary is basically shifting
+![image](https://user-images.githubusercontent.com/86380243/123184415-a7f99500-d461-11eb-9ac7-68bc44b996ae.png)
+The netlist will be:
+![image](https://user-images.githubusercontent.com/86380243/123184799-6d442c80-d462-11eb-8aff-3b52a1fddc7e.png)
+
+Synthesizing mult_8: We can see there is no hardware as its appending
+![image](https://user-images.githubusercontent.com/86380243/123185041-0b37f700-d463-11eb-8bd1-b038a8acb95e.png)
+The netlist will be: 
+![image](https://user-images.githubusercontent.com/86380243/123185161-45a19400-d463-11eb-89b0-0d330087a794.png)
+As we can see, its basicallay concatenating {a,a}
+
+
+
 
 
 
