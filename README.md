@@ -265,21 +265,35 @@ Sequential optimizations can be done in below ways:
   ![image](https://user-images.githubusercontent.com/86380243/123479108-69351d80-d5ce-11eb-95b8-275d533376d8.png)
 
   
-  1a) Simulating the bad_mux.v
+  2a) Simulating the bad_mux.v
   
   ![image](https://user-images.githubusercontent.com/86380243/123479641-3b9ca400-d5cf-11eb-81c7-b042012e611e.png)
  
   As we can see above, the Mux functionality is not implemented because the activity is only dependent on sel and not i0 and i1.
   
-  1b) Synthesizing the bad_mux.v, clearly its a MUX in the report. That means he synthesis tool considers it a mux behaviour and independent of the sensitivity list.
+  2b) Synthesizing the bad_mux.v, clearly its a MUX in the report. That means he synthesis tool considers it a mux behaviour and independent of the sensitivity list.
   
   ![image](https://user-images.githubusercontent.com/86380243/123480310-296f3580-d5d0-11eb-8a94-6ef781f62f8c.png)
   
-  1c) GLS output is not same as simulation output. It can be clearly seen that it is a 2:1 Mux implementation
+  2c) GLS output is not same as simulation output. It can be clearly seen that it is a 2:1 Mux implementation
   
   ![image](https://user-images.githubusercontent.com/86380243/123480653-a8646e00-d5d0-11eb-9572-e590ad5bd965.png)
   
   Hence, this is a problem of Synthesis simulation mismatch which we need to take care.
+  
+  
+  3a) Simulating the blocking_caveat.v
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123482057-a4395000-d5d2-11eb-9203-53e5c77c3d00.png)
+   
+  As seen above, clearly a flop is inferred and previous values of a & b are anded with current value of c as the code runs in a sequential order. This is not what we want.
+  
+  3b) Synthesizing the blocking_caveat.v, we get a correct behaviour of an OA21 gate aget mapping with the standard cell library.
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123482749-b1a30a00-d5d3-11eb-8a53-0f4901adf886.png)
+ 
+  3c) GLS output is not same as simulation output. It can be clearly seen that
+  
 
 
   
