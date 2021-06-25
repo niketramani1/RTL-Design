@@ -156,6 +156,8 @@ Sequential optimizations can be done in below ways:
    ![image](https://user-images.githubusercontent.com/86380243/123344977-076ba980-d523-11eb-9709-acaa4c30f533.png)
    3b)Synthesizing dff_const3.v, we see that both the FF instance are still there
    ![image](https://user-images.githubusercontent.com/86380243/123345113-5addf780-d523-11eb-8aac-c432e88dc1f6.png)
+   ![image](https://user-images.githubusercontent.com/86380243/123352156-b6f94980-d52c-11eb-9917-ca120824ff59.png)
+
 
    4a)Simulating dff_const4.v, we see that the q goes high irrespective of the set signal and there will be no optimization done as its always high
    ![image](https://user-images.githubusercontent.com/86380243/123350630-5ddbe680-d529-11eb-9ad2-7c6aa7981431.png)
