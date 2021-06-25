@@ -264,7 +264,18 @@ Sequential optimizations can be done in below ways:
   
   ![image](https://user-images.githubusercontent.com/86380243/123479108-69351d80-d5ce-11eb-95b8-275d533376d8.png)
 
+  
+  1a) Simulating the bad_mux.v
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123479641-3b9ca400-d5cf-11eb-81c7-b042012e611e.png)
+ 
+  As we can see above, the Mux functionality is not implemented because the activity is only dependent on sel and not i0 and i1.
+  
+  1b) Synthesizing the bad_mux.v, clearly its a MUX in the report. That means he synthesis tool considers it a mux behaviour and independent of the sensitivity list.
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123480310-296f3580-d5d0-11eb-8a94-6ef781f62f8c.png)
 
+  
 
   
 
