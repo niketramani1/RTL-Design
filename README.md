@@ -292,7 +292,11 @@ Sequential optimizations can be done in below ways:
   
   ![image](https://user-images.githubusercontent.com/86380243/123482749-b1a30a00-d5d3-11eb-8a53-0f4901adf886.png)
  
-  3c) GLS output is not same as simulation output. It can be clearly seen that
+  3c) GLS output is not same as simulation output. It can be clearly seen that we get the required output in GLS simulation.
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123483516-d5b31b00-d5d4-11eb-99b0-a6c473423190.png)
+
+  
   
 
 
