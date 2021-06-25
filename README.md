@@ -171,6 +171,22 @@ Sequential optimizations can be done in below ways:
    5b)Synthesizing dff_const3.v, we see that both the FF instance are still there
    ![image](https://user-images.githubusercontent.com/86380243/123351455-1d7d6800-d52b-11eb-9cd8-72a5aa9477f7.png)
    ![image](https://user-images.githubusercontent.com/86380243/123351586-6fbe8900-d52b-11eb-80b7-043be9145246.png)
+   
+   Sequential Optimizations for unused outputs
+   After synthesizing counter_opt.v, we see that the first two MSB bits of q are not considered as the q is assigned only to q[0].
+   ![image](https://user-images.githubusercontent.com/86380243/123353234-10627800-d52f-11eb-8342-c9f2ad0ded06.png)
+   The circuit is basiccaly just toggling continuously between 0 and 1.
+   
+   Modifying the output to q[2:0] == 3'b100. This means we are using all 3 bits of counter. New file is counter_opt_modify.v
+   ![image](https://user-images.githubusercontent.com/86380243/123354151-09d50000-d531-11eb-8e35-7c81f68275a7.png)
+   
+   As we can see below from the report, three flops are inferred as expected
+   ![image](https://user-images.githubusercontent.com/86380243/123354214-2d984600-d531-11eb-81c5-46ca8ee7c716.png)
+   ![image](https://user-images.githubusercontent.com/86380243/123354418-9a134500-d531-11eb-991c-bb43e4f28a02.png)
+   Three flops can be seen in the netlist and hence are preserved.
+   
+
+   
 
 
 
