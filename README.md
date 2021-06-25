@@ -163,6 +163,13 @@ Sequential optimizations can be done in below ways:
    ![image](https://user-images.githubusercontent.com/86380243/123350823-c62ac800-d529-11eb-9379-6828a7862524.png)
    ![image](https://user-images.githubusercontent.com/86380243/123350910-f83c2a00-d529-11eb-8f41-f580ca27682e.png)
    We can see that the optimized netlist has no flip flops.
+   
+   5a)Simulating dff_const5.v, we see that the q goes high on the next clock edge because of the flop 1 clq->q delay.
+   ![image](https://user-images.githubusercontent.com/86380243/123351338-e27b3480-d52a-11eb-93b2-71a0c13f0757.png)
+   5b)Synthesizing dff_const3.v, we see that both the FF instance are still there
+   ![image](https://user-images.githubusercontent.com/86380243/123351455-1d7d6800-d52b-11eb-9cd8-72a5aa9477f7.png)
+   ![image](https://user-images.githubusercontent.com/86380243/123351586-6fbe8900-d52b-11eb-80b7-043be9145246.png)
+
 
 
    
