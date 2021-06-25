@@ -1,4 +1,4 @@
-# RTL-Design using Verilog with Skywater Technology
+# RTL-Design using Verilog with Sky130 Technology
 
 ## **Day 1**: Introduction to Verilog RTL Design and Synthesis
 
