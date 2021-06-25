@@ -151,6 +151,19 @@ Sequential optimizations can be done in below ways:
    ![image](https://user-images.githubusercontent.com/86380243/123338064-39c2da00-d516-11eb-916a-f396ac174e23.png)
    ![image](https://user-images.githubusercontent.com/86380243/123338185-60811080-d516-11eb-9b04-574718899ee3.png)
    We can see it from the netlist as well
+   
+   3a)Simulating dff_const3.v, we see that the q goes low initially because of the flop 1 clq->q delay and then goes high on the next posedge of clk
+   ![image](https://user-images.githubusercontent.com/86380243/123344977-076ba980-d523-11eb-9709-acaa4c30f533.png)
+   3b)Synthesizing dff_const3.v, we see that both the FF instance are still there
+   ![image](https://user-images.githubusercontent.com/86380243/123345113-5addf780-d523-11eb-8aac-c432e88dc1f6.png)
+
+   4a)Simulating dff_const4.v, we see that the q goes high irrespective of the set signal and there will be no optimization done as its always high
+   ![image](https://user-images.githubusercontent.com/86380243/123350630-5ddbe680-d529-11eb-9ad2-7c6aa7981431.png)
+   4b)Synthesizing dff_const4.v, there are no flip flops mapped and optimization is done
+   ![image](https://user-images.githubusercontent.com/86380243/123350823-c62ac800-d529-11eb-9379-6828a7862524.png)
+   ![image](https://user-images.githubusercontent.com/86380243/123350910-f83c2a00-d529-11eb-8f41-f580ca27682e.png)
+   We can see that the optimized netlist has no flip flops.
+
 
    
  
