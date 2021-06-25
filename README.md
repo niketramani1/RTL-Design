@@ -274,6 +274,13 @@ Sequential optimizations can be done in below ways:
   1b) Synthesizing the bad_mux.v, clearly its a MUX in the report. That means he synthesis tool considers it a mux behaviour and independent of the sensitivity list.
   
   ![image](https://user-images.githubusercontent.com/86380243/123480310-296f3580-d5d0-11eb-8a94-6ef781f62f8c.png)
+  
+  1c) GLS output is not same as simulation output. It can be clearly seen that it is a 2:1 Mux implementation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123480653-a8646e00-d5d0-11eb-9572-e590ad5bd965.png)
+  
+  Hence, this is a problem of Synthesis simulation mismatch which we need to take care.
+
 
   
 
