@@ -246,7 +246,28 @@ Sequential optimizations can be done in below ways:
    c)Non standard verilog coding.
    
    
-   
+  # Lab on GLS Synthesis Simulation mismatch
+  
+  1a) Simulating the ternary_operator_mux.v
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123465247-e1461800-d5bb-11eb-9d92-946a98cb5f53.png)
+  
+  As we can see above its clearly working as a 2:1 MUX.
+  
+  1b) Synthesizing the ternary_operator_mux.v, clearly its a MUX in the report
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123465732-7ea14c00-d5bc-11eb-8098-1d8100b98c87.png)
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123465899-b4463500-d5bc-11eb-800b-30d5150d04a6.png)
+  
+  1c) GLS output is same as simulation output
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123479108-69351d80-d5ce-11eb-95b8-275d533376d8.png)
+
+
+
+  
+
 
    
 
