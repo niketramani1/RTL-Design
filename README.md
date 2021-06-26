@@ -250,7 +250,8 @@ Sequential optimizations can be done in below ways:
   
   1a) Simulating the ternary_operator_mux.v
   
-  ![image](https://user-images.githubusercontent.com/86380243/123465247-e1461800-d5bb-11eb-9d92-946a98cb5f53.png)
+  ![image](https://user-images.githubusercontent.com/86380243/123528587-6281d580-d6b6-11eb-806b-7e9081312527.png)
+
   
   As we can see above its clearly working as a 2:1 MUX.
   
