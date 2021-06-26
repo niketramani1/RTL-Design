@@ -325,7 +325,13 @@ Sequential optimizations can be done in below ways:
   
   The synthesis tool also infers a latch as we expeced from simulating
 
+  3a) Lab on incomp_case.v --> Simulation
   
+  ![image](https://user-images.githubusercontent.com/86380243/123525901-17f65e00-d6a2-11eb-84d5-726bcb9daae5.png)
+  
+  Clearly when sel becomes 10 or 11 the outpu is being latched to the previous y and hence a latch is inferred.
+
+  3b) Lab on incomp_case.v --> Synthesis
   
   
 
