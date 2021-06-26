@@ -109,3 +109,156 @@
   109  set > set.txt
   110  history
   111  history > history.txt
+    1  ls dff*
+    2  ls tb_dff*
+    3  iverilog dff_asyncres.v tb_dff_asyncres.v 
+    4  ./a.out
+    5  gtkwave tb_dff_asyncres.vcd
+    6  gtkwave tb_dff_asyncres.vcd
+    7  iverilog dff_async_set.v tb_dff_async_set.v 
+    8  ./a.out
+    9  gtkwave tb_dff_async_set.vcd
+   10  gtkwave tb_dff_async_set.vcd
+   11  clear
+   12  ls dff*
+   13  ls tb_dff*
+   14  iverilog dff_syncres.v tb_dff_syncres.v 
+   15  ./a.out
+   16  gtkwave tb_dff_syncres.vcd
+   17  yosys
+   18  clear
+   19  yosys
+   20  iverilog dff_const1.v tb_dff_const1.v 
+   21  ./a.out
+   22  gtkwave tb_dff_const1.vcd
+   23  gtkwave tb_dff_const1.vcd
+   24  iverilog dff_const2.v tb_dff_const2.v 
+   25  ./a.out 
+   26  gtkwave tb_dff_const2.vcd
+   27  yosys
+   28  iverilog dff_const3.v tb_dff_const3.v 
+   29  ./a.out 
+   30  gtkwave tb_dff_const3.vcd
+   31  clear
+   32  iverilog dff_const3.v tb_dff_const3.v 
+   33  ./a.out 
+   34  gtkwave tb_dff_const3.vcd
+   35  yosys
+   36  vim dff_const5.v 
+   37  iverilog dff_const5.v tb_dff_const5.v 
+   38  ./a.out 
+   39  gtkwave tb_dff_const5.vcd
+   40  cp counter_opt.v counter_opt_modify.v
+   41  vim counter_opt_modify.v 
+   42  vim counter_opt_modify.v 
+   43  vim counter_opt_modify.v 
+   44  vim counter_opt_modify.v 
+   45  yosys
+   46  vim bad_mux.v 
+   47  clear
+   48  iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v bad_mux_netlist.v tb_bad_mux.v
+   49  ./a.out 
+   50  gtkwave tb_bad_mux.vcd
+   51  iverilog blocking_caveat.v tb_blocking_caveat.v 
+   52  ./a.out 
+   53  gtkwave tb_blocking_caveat.vcd 
+   54  iverilog incomp_if.v tb_incomp_if.v 
+   55  ./a.out 
+   56  gtkwave tb_incomp_if.vcd
+   57  iverilog incomp_if2.v tb_incomp_if2.v 
+   58  ./a.out 
+   59  gtkwave tb_incomp_if2.vcd
+   60  history | grep git
+   61  git info
+   62  git remote -v
+   63  ls -l
+   64  cd ..
+   65  cd ..
+   66  ls -l
+   67  git clone git@github.com:niketramani1/RTL-Design_VSDIAT_Sky130_Workshop.git
+   68  cd
+   69  cd .ssh/
+   70  ls -l
+   71  ssh-keygen -b 1024 -t rsa 
+   72  ls
+   73  cat id_rsa
+   74  cat id_rsa.pub 
+   75  cd ..
+   76  cd VLSI/
+   77  git clone git@github.com:niketramani1/RTL-Design_VSDIAT_Sky130_Workshop.git
+   78  ls -l
+   79  cd RTL-Design_VSDIAT_Sky130_Workshop/
+   80  ls
+   81  mkdir Work
+   82  cd Work/
+   83  which rsync
+   84  rsync -avC ../../sky130RTLDesignAndSynthesisWorkshop .
+   85  ls -l .git
+   86  rsync -avC ../../vsdflow/ .
+   87  ls -l
+   88  rm *
+   89  rm -rf *
+   90* rsync -avC ../../vs .
+   91  rsync -avC ../../sky130RTLDesignAndSynthesisWorkshop .
+   92  ls -l
+   93  cd ..
+   94  ls
+   95  git add .
+   96  git status
+   97  git commit .
+   98  git config --global user.email "niket@altustek.com"
+   99  git config --global user.name "Niket Ramani"
+  100  git commit .
+  101  git push
+  102  env
+  103  ls
+  104  cd Work/
+  105  ls
+  106  mkdir setup
+  107  cd setup/
+  108  env > env.txt
+  109  set > set.txt
+  110  history
+  111  history > history.txt
+  112  which iverilog
+  113  which yosys
+  114  rpm -qa
+  115  dpkg -l
+  116  dpkg -l > dpkg-l.txt
+  117  cat /etc/issue
+  118  cp /etc/issue issue.txt
+  119  grep verilog dpkg-l.txt 
+  120  grep yosys dpkg-l.txt 
+  121  which yoys
+  122  which yosys
+  123  cd /usr/local/
+  124  ls
+  125  cd src
+  126  ls -l
+  127  cd ..
+  128  du -ks .
+  129  find .
+  130  find . | more
+  131  find . | more
+  132  cd 
+  133  ls
+  134  cd VLSI/
+  135  ls
+  136  cd RTL-Design_VSDIAT_Sky130_Workshop/
+  137  ls
+  138  cd Work/setup/
+  139  ls
+  140  pwd
+  141  pushd /usr/
+  142  tar Jcvf ~/VLSI/RTL-Design_VSDIAT_Sky130_Workshop/Work/setup/local.tbz2 local
+  143  popd
+  144  ls -l
+  145  ls -lh
+  146  git add .
+  147  git commit
+  148  git push
+  149  ls
+  150  vim env.txt 
+  151  cd /snap/bin
+  152  ls
+  153  history >> history.txt 
