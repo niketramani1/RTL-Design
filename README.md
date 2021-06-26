@@ -370,11 +370,26 @@ Sequential optimizations can be done in below ways:
   ![image](https://user-images.githubusercontent.com/86380243/123527368-d7e8a880-d6ac-11eb-8def-63327cca070d.png)
   
   As we can see it is a 4:1 MUX without any latching and hence a synthesis simulation mismatch
-
- 
-
   
+  ### for and for generate
+  
+  7a) Lab on mux_generate.v --> Simulation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528286-29e0fc80-d6b4-11eb-8dce-43a2783b481f.png)
 
+  As we can see its behaving exactly a 4:1 Mux
+
+  7b) Lab on mux_generate.v --> Synthesis  
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528438-f81c6580-d6b4-11eb-9f0c-067bfaf669dd.png)
+  
+  7c) Lab on mux_generate.v --> GLS simulation after write_verilog
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528528-e5566080-d6b5-11eb-817d-269826123344.png)
+  
+  It matches the behaviour of RTL
+  
+ 
 
 
   
