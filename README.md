@@ -348,7 +348,11 @@ Sequential optimizations can be done in below ways:
   
   Seen from synthesis, there is no latch.
   
-  
+  5) Lab on patial_case_assign.v --> Synthesis
+
+  ![image](https://user-images.githubusercontent.com/86380243/123527128-0cf3fb80-d6ab-11eb-8466-a15f8fcbe5d4.png)
+
+ 
 
   
 
