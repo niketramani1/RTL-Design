@@ -329,9 +329,12 @@ Sequential optimizations can be done in below ways:
   
   ![image](https://user-images.githubusercontent.com/86380243/123525901-17f65e00-d6a2-11eb-84d5-726bcb9daae5.png)
   
-  Clearly when sel becomes 10 or 11 the outpu is being latched to the previous y and hence a latch is inferred.
+  Clearly when sel becomes 10 or 11 the output is being latched to the previous y and hence a latch is inferred.
 
   3b) Lab on incomp_case.v --> Synthesis
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123526859-96ee9500-d6a8-11eb-8407-8fcdbd932ecd.png)
+
   
   
 
