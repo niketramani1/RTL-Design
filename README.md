@@ -390,7 +390,19 @@ Sequential optimizations can be done in below ways:
   
   It matches the behaviour of RTL
   
+  8a) Lab on demux_case.v --> Simulation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528781-3c5d3500-d6b8-11eb-9d96-fc3aa252c272.png)
+   
+  8b) Lab on demux_case --> Synthesis
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528796-7d554980-d6b8-11eb-9a84-7d4a5f2f2dc8.png)
  
+  8c) Lab on mux_generate.v --> GLS simulation after write_verilog
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528837-fbb1eb80-d6b8-11eb-96b4-aaf8f0fbee43.png)
+
+
 
 
   
