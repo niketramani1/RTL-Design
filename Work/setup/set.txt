@@ -1,0 +1,83 @@
+BASH=/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:expand_aliases:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="4" [2]="20" [3]="1" [4]="release" [5]="x86_64-pc-linux-gnu")
+BASH_VERSION='4.4.20(1)-release'
+COLORTERM=truecolor
+COLUMNS=168
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1006/bus
+DESKTOP_SESSION=xfce
+DIRSTACK=()
+DISPLAY=:14.0
+EUID=1006
+GLADE_CATALOG_PATH=:
+GLADE_MODULE_PATH=:
+GLADE_PIXMAP_PATH=:
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/52441f07_3c5e_4960_824e_7e9a7013a0ff
+GNOME_TERMINAL_SERVICE=:1.52
+GROUPS=()
+GTK_MODULES=gail:atk-bridge
+HISTFILE=/home/niket/.bash_history
+HISTFILESIZE=500
+HISTSIZE=500
+HOME=/home/niket
+HOSTNAME=rtlworkshop23062021
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+LANG=C.UTF-8
+LINES=34
+LOGNAME=niket
+MACHTYPE=x86_64-pc-linux-gnu
+MAILCHECK=60
+OLDPWD=/home/niket/VLSI/RTL-Design_VSDIAT_Sky130_Workshop/Work
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/sbin:/bin:/usr/bin:/usr/local/bin:/snap/bin
+PIPESTATUS=([0]="0")
+PPID=7692
+PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+PS2='> '
+PS4='+ '
+PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+PWD=/home/niket/VLSI/RTL-Design_VSDIAT_Sky130_Workshop/Work/setup
+QT_ACCESSIBILITY=1
+SESSION_MANAGER=local/rtlworkshop23062021:@/tmp/.ICE-unix/5381,unix/rtlworkshop23062021:/tmp/.ICE-unix/5381
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:emacs:hashall:histexpand:history:interactive-comments:monitor
+SHLVL=1
+SSH_AGENT_PID=5362
+SSH_AUTH_SOCK=/tmp/ssh-PlEIETkWZWXr/agent.5284
+TERM=xterm-256color
+UID=1006
+USER=niket
+VTE_VERSION=5202
+XDG_CONFIG_DIRS=/etc/xdg
+XDG_CURRENT_DESKTOP=XFCE
+XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share
+XDG_MENU_PREFIX=xfce-
+XDG_RUNTIME_DIR=/run/user/1006
+XDG_SESSION_ID=c8
+XRDP_SESSION=1
+XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+_=env
+command_not_found_handle () 
+{ 
+    if [ -x /usr/lib/command-not-found ]; then
+        /usr/lib/command-not-found -- "$1";
+        return $?;
+    else
+        if [ -x /usr/share/command-not-found/command-not-found ]; then
+            /usr/share/command-not-found/command-not-found -- "$1";
+            return $?;
+        else
+            printf "%s: command not found\n" "$1" 1>&2;
+            return 127;
+        fi;
+    fi
+}
