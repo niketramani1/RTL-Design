@@ -351,6 +351,25 @@ Sequential optimizations can be done in below ways:
   5) Lab on patial_case_assign.v --> Synthesis
 
   ![image](https://user-images.githubusercontent.com/86380243/123527128-0cf3fb80-d6ab-11eb-8466-a15f8fcbe5d4.png)
+  
+  
+  6a) Lab on bad_case .v --> Simulation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123527247-d1a5fc80-d6ab-11eb-8545-de6d95e14620.png)
+
+  Clearly when sel is 11 the outut is latched to some value as the simulator might be confused.
+  
+  6b) Lab on bad_case.v --> Synthesis  
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123527283-33666680-d6ac-11eb-9bf0-c5cd80f5dd67.png)
+ 
+  As we can see that there are no latches and we get a 4:1 mux
+  
+  6c) Lab on bad_case.v --> GLS simulation after write_verilog
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123527368-d7e8a880-d6ac-11eb-8def-63327cca070d.png)
+  
+  As we can see it is a 4:1 MUX without any latching and hence a synthesis simulation mismatch
 
  
 
