@@ -336,7 +336,22 @@ Sequential optimizations can be done in below ways:
   ![image](https://user-images.githubusercontent.com/86380243/123526859-96ee9500-d6a8-11eb-8407-8fcdbd932ecd.png)
 
   
+  4a) Lab on comp_case.v --> Simulation
   
+  ![image](https://user-images.githubusercontent.com/86380243/123526957-6a874880-d6a9-11eb-8be5-d2535e4b9a9f.png)
+  
+  Clearly there is no latch infered.
+  
+  4b) Lab on incomp_case.v --> Synthesis
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123527020-f7ca9d00-d6a9-11eb-8347-11ccdae1bfed.png)
+  
+  Seen from synthesis, there is no latch.
+  
+  
+
+  
+
 
 
   
