@@ -296,6 +296,36 @@ Sequential optimizations can be done in below ways:
   
   ![image](https://user-images.githubusercontent.com/86380243/123483516-d5b31b00-d5d4-11eb-99b0-a6c473423190.png)
 
+
+
+## **Day 5**: if, case, for loop and for generate
+  
+  1a) Lab on incomplete_if.v --> Simulation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123522150-8da20000-d689-11eb-978f-b9150de0edd2.png)
+  
+  Clearly it can be seen that there is a latch condition when i0 goes low, the y is held either at 0 or 1.
+  
+  1b) Lab on incomplete_if.v --> Synthesis
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123522223-04d79400-d68a-11eb-9106-1c95a7ece0af.png)
+
+  The synthesis tool also infers a latch as we expeced from simulating
+  
+  
+  2a) Lab on incomplete_if2.v --> Simulation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123522377-e4f4a000-d68a-11eb-90c7-ec426d78b2ad.png)
+  
+  Clearly it can be seen that there is a latch condition.
+
+  2b) Lab on incomplete_if2.v --> Synthesis
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123522473-7f54e380-d68b-11eb-8a7c-4e1a33f70a41.png)
+  
+  The synthesis tool also infers a latch as we expeced from simulating
+
+  
   
   
 
