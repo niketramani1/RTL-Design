@@ -415,6 +415,28 @@ Sequential optimizations can be done in below ways:
   9c) Lab on mux_generate.v --> GLS simulation after write_verilog
   
   ![image](https://user-images.githubusercontent.com/86380243/123528991-4d0eaa80-d6ba-11eb-8ff5-9e8ef926c8e3.png)
+  
+  10a) Lab on rca.v --> Simulation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123529322-0d958d80-d6bd-11eb-8ea6-36d42ccbba39.png)
+  
+  10b) Lab on rca.v --> Synthesis
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123529427-15a1fd00-d6be-11eb-82c1-94e556d2485a.png)
+
+  NOTE: in yosys. first read rca.v and then read fa.v
+ 
+  10c) Lab on rca.v --> GLS simulation after write_verilog
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123529484-8fd28180-d6be-11eb-9469-6c29441e90f4.png)
+
+  
+  
+  # Acknowledgements
+  
+  Kunal Ghosh
+  Shon Taware
+  All other members at VSD-IAT
 
 
 
