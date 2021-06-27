@@ -394,14 +394,27 @@ Sequential optimizations can be done in below ways:
   
   ![image](https://user-images.githubusercontent.com/86380243/123528781-3c5d3500-d6b8-11eb-9d96-fc3aa252c272.png)
    
-  8b) Lab on demux_case --> Synthesis
+  8b) Lab on demux_case.v --> Synthesis
   
   ![image](https://user-images.githubusercontent.com/86380243/123528796-7d554980-d6b8-11eb-9a84-7d4a5f2f2dc8.png)
  
   8c) Lab on mux_generate.v --> GLS simulation after write_verilog
   
   ![image](https://user-images.githubusercontent.com/86380243/123528837-fbb1eb80-d6b8-11eb-96b4-aaf8f0fbee43.png)
+  
+  
+  9a) Lab on demux_generate.v --> Simulation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528925-a6c2a500-d6b9-11eb-859d-d1aa5b271d5d.png)
 
+
+  9b) Lab on demux_generate.v --> Synthesis
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528944-e1c4d880-d6b9-11eb-9a81-df5330ca97b5.png)
+ 
+  9c) Lab on mux_generate.v --> GLS simulation after write_verilog
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528991-4d0eaa80-d6ba-11eb-8ff5-9e8ef926c8e3.png)
 
 
 
