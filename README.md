@@ -435,7 +435,9 @@ Sequential optimizations can be done in below ways:
   # Acknowledgements
   
   Kunal Ghosh
+  
   Shon Taware
+  
   All other members at VSD-IAT
 
 
