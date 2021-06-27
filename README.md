@@ -250,7 +250,8 @@ Sequential optimizations can be done in below ways:
   
   1a) Simulating the ternary_operator_mux.v
   
-  ![image](https://user-images.githubusercontent.com/86380243/123465247-e1461800-d5bb-11eb-9d92-946a98cb5f53.png)
+  ![image](https://user-images.githubusercontent.com/86380243/123528587-6281d580-d6b6-11eb-806b-7e9081312527.png)
+
   
   As we can see above its clearly working as a 2:1 MUX.
   
@@ -325,9 +326,120 @@ Sequential optimizations can be done in below ways:
   
   The synthesis tool also infers a latch as we expeced from simulating
 
+  3a) Lab on incomp_case.v --> Simulation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123525901-17f65e00-d6a2-11eb-84d5-726bcb9daae5.png)
+  
+  Clearly when sel becomes 10 or 11 the output is being latched to the previous y and hence a latch is inferred.
+
+  3b) Lab on incomp_case.v --> Synthesis
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123526859-96ee9500-d6a8-11eb-8407-8fcdbd932ecd.png)
+
+  
+  4a) Lab on comp_case.v --> Simulation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123526957-6a874880-d6a9-11eb-8be5-d2535e4b9a9f.png)
+  
+  Clearly there is no latch infered.
+  
+  4b) Lab on incomp_case.v --> Synthesis
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123527020-f7ca9d00-d6a9-11eb-8347-11ccdae1bfed.png)
+  
+  Seen from synthesis, there is no latch.
+  
+  5) Lab on patial_case_assign.v --> Synthesis
+
+  ![image](https://user-images.githubusercontent.com/86380243/123527128-0cf3fb80-d6ab-11eb-8466-a15f8fcbe5d4.png)
   
   
+  6a) Lab on bad_case .v --> Simulation
   
+  ![image](https://user-images.githubusercontent.com/86380243/123527247-d1a5fc80-d6ab-11eb-8545-de6d95e14620.png)
+
+  Clearly when sel is 11 the outut is latched to some value as the simulator might be confused.
+  
+  6b) Lab on bad_case.v --> Synthesis  
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123527283-33666680-d6ac-11eb-9bf0-c5cd80f5dd67.png)
+ 
+  As we can see that there are no latches and we get a 4:1 mux
+  
+  6c) Lab on bad_case.v --> GLS simulation after write_verilog
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123527368-d7e8a880-d6ac-11eb-8def-63327cca070d.png)
+  
+  As we can see it is a 4:1 MUX without any latching and hence a synthesis simulation mismatch
+  
+  ### for and for generate
+  
+  7a) Lab on mux_generate.v --> Simulation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528286-29e0fc80-d6b4-11eb-8dce-43a2783b481f.png)
+
+  As we can see its behaving exactly a 4:1 Mux
+
+  7b) Lab on mux_generate.v --> Synthesis  
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528438-f81c6580-d6b4-11eb-9f0c-067bfaf669dd.png)
+  
+  7c) Lab on mux_generate.v --> GLS simulation after write_verilog
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528528-e5566080-d6b5-11eb-817d-269826123344.png)
+  
+  It matches the behaviour of RTL
+  
+  8a) Lab on demux_case.v --> Simulation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528781-3c5d3500-d6b8-11eb-9d96-fc3aa252c272.png)
+   
+  8b) Lab on demux_case.v --> Synthesis
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528796-7d554980-d6b8-11eb-9a84-7d4a5f2f2dc8.png)
+ 
+  8c) Lab on mux_generate.v --> GLS simulation after write_verilog
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528837-fbb1eb80-d6b8-11eb-96b4-aaf8f0fbee43.png)
+  
+  
+  9a) Lab on demux_generate.v --> Simulation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528925-a6c2a500-d6b9-11eb-859d-d1aa5b271d5d.png)
+
+
+  9b) Lab on demux_generate.v --> Synthesis
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528944-e1c4d880-d6b9-11eb-9a81-df5330ca97b5.png)
+ 
+  9c) Lab on mux_generate.v --> GLS simulation after write_verilog
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123528991-4d0eaa80-d6ba-11eb-8ff5-9e8ef926c8e3.png)
+  
+  10a) Lab on rca.v --> Simulation
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123529322-0d958d80-d6bd-11eb-8ea6-36d42ccbba39.png)
+  
+  10b) Lab on rca.v --> Synthesis
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123529427-15a1fd00-d6be-11eb-82c1-94e556d2485a.png)
+
+  NOTE: in yosys. first read rca.v and then read fa.v
+ 
+  10c) Lab on rca.v --> GLS simulation after write_verilog
+  
+  ![image](https://user-images.githubusercontent.com/86380243/123529484-8fd28180-d6be-11eb-9469-6c29441e90f4.png)
+
+  
+  
+  # Acknowledgements
+  
+  Kunal Ghosh
+  
+  Shon Taware
+  
+  All other members at VSD-IAT
+
 
 
   
